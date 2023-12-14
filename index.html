@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Neumorphic Portfolio</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        #portfolio-container {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1),
+                        -10px -10px 30px rgba(255, 255, 255, 0.9);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .project-card {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1),
+                        -10px -10px 30px rgba(255, 255, 255, 0.9);
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+
+        .project-title {
+            
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: #45a049;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #0f0f0f;
+            
+        }
+
+        #portfolio-container.dark-mode {
+            background-color: #0f0f0f;
+            color: #ffff;
+        }
+
+        h1.dark-mode {
+            color: #ffff;
+        }
+
+        .project-card.dark-mode {
+            background-color: #0f0f0f;
+            color: #ffff;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3),
+                        -10px -10px 30px rgba(255, 255, 255, 0.5);
+        }
+
+        .project-title.dark-mode {
+            color: #ffff;
+        }
+
+        .project-description.dark-mode {
+            color: #ffff; 
+        }
+
+        /* toggle button styling */
+        #dark-mode-toggle {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #202020;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                        -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        #dark-mode-toggle:hover {
+            background-color: #555;
+        }
+
+        #dark-mode-toggle.dark-mode {
+            background-color: #eee;
+            color: #333;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+                        -5px -5px 10px rgba(255, 255, 255, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div id="portfolio-container">
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+            <h1>Amir Kamalian</h1>
+
+            <div class="project-card">
+                <h2 class="project-title">Embedded Systems Work Term</h2>
+                <p class="project-description">Project description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">Chest X-Ray Classifier</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">vm-memory-manager</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">TerminalWeather</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            
+        </div>
+
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.getElementById('portfolio-container').classList.toggle('dark-mode');
+            document.querySelectorAll('.project-card').forEach(card => card.classList.toggle('dark-mode'));
+        }
+    </script>
+
+</body>
+</html>
