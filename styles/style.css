@@ -1,13 +1,18 @@
+html {
+    height: 100vh;
+}
+
 
 body {
-    background: url(/styles/wallpaper.png) no-repeat center;
+    /* imaged used from: https://www.pexels.com/photo/snow-coated-rocky-mountains-772803/ */
+    background: url(/styles/pexels-tyler-lastovich-772803.jpg) no-repeat center;
     background-size: cover; 
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin-top: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -19,6 +24,7 @@ body {
                 -10px -10px 30px rgba(255, 255, 255, 0.9);
     width: 80%;
     max-width: 600px;
+    margin-top: 125px;
     text-align: center;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -60,7 +66,7 @@ body {
 
 
 
-/* Dark mode styles */
+/* ====================== Dark mode styles ====================== */
 body.dark-mode {
     background-color: #0f0f0f;
     
@@ -90,11 +96,11 @@ h1.dark-mode {
     color: #ffff; 
 }
 
-/* toggle button styling */
+/* ====================== toggle button styling ====================== */
 #dark-mode-toggle {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: #202020;
     color: white;
     border: none;
@@ -116,4 +122,32 @@ h1.dark-mode {
                 -5px -5px 10px rgba(255, 255, 255, 0.7);
 }
 
+
+/* ====================== Nav bar styling ====================== */
+#navbar {
+    background: #0f0f0f;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+#navbar a.active {
+    background-color: #4CAF50;
+}
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="border-style: solid;border-color: red">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Amir Kamalian</title>
+</head>
+<body>
+    
+        <div id="portfolio-container">
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+            <h1>Amir Kamalian</h1>
+            <div id="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about_me.html">About Me</a>
+                <a href="./projects.html" class="active">Projects</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">Embedded Systems Work Term</h2>
+                <p class="project-description">Project description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">Chest X-Ray Classifier</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">vm-memory-manager</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">TerminalWeather</h2>
+                <p class="project-description">Project Description. </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            
+        </div>
+
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.getElementById('portfolio-container').classList.toggle('dark-mode');
+            document.querySelectorAll('.project-card').forEach(card => card.classList.toggle('dark-mode'));
+            document.getElementById('dark-mode-toggle').classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
