@@ -9,38 +9,66 @@ body {
     background-size: cover; 
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     margin-top: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
 
+/* ====================== projects.html styling ====================== */
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
 #portfolio-container {
-    background-color: rgba(224, 244, 244, 0.60);
+    background-color: #dfe7f3;
     border-radius: 20px;
-    padding: 30px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1),
-                -10px -10px 30px rgba(255, 255, 255, 0.9);
-    width: 80%;
-    max-width: 600px;
-    margin-top: 125px;
+    padding: 10px;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+    width: 1000px;
+    height: 95%;
     text-align: center;
-    transition: background-color 0.5s, color 0.5s;
 }
 
 .project-card {
-    background-color: #e0e0e0;
+    background-color: #dfe7f3;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px 0;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1),
-                -10px -10px 30px rgba(255, 255, 255, 0.9);
-    transition: background-color 0.5s, box-shadow 0.5s;
+    margin: 10px;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* specific styling for projects */
+#emb-work-term {
+    background-color: #c0d5f0;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#chest-xray-project {
+    background-color: #c0d5f0;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#mem-manger-project {
+    background-color: #c0d5f0;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5); 
+}
+
+#terminal-weather-project {
+    background-color: #c0d5f0;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .project-title {
-    
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -53,18 +81,112 @@ body {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #4CAF50;
+    background-color: #6155f6;
     color: white;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .project-link:hover {
-    background-color: #45a049;
+    background-color: #dfe7f3;
+    color: #747474ee;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
+/* ====================== about_me.html styling ====================== */
+#about-me-card {
+    background-color: #dfe7f3;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bold;
+}
 
+#about-me-container {
+    background-color: #dfe7f3;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+    width: 1000px;
+    height: 50%;
+    text-align: center;
+}
+
+/* ====================== toggle button styling ====================== */
+#dark-mode-toggle {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+#dark-mode-toggle.dark-mode {
+    background-color: #eee;
+    color: #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+                -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* ====================== Nav bar styling ====================== */
+#navbar {
+    background: #dfe7f3;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#navbar a {
+    color: #899bc3;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #9bd19b;
+    color: #747474ee;
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#navbar a.active {
+    background-color: #9bd19b;
+    color: #747474ee; 
+    box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -3px -3px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/**
+*
+*
+*
+*
+*/
 
 /* ====================== Dark mode styles ====================== */
 body.dark-mode {
@@ -96,58 +218,5 @@ h1.dark-mode {
     color: #ffff; 
 }
 
-/* ====================== toggle button styling ====================== */
-#dark-mode-toggle {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 5px;
-    background-color: #202020;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
-                -5px -5px 10px rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
 
-#dark-mode-toggle:hover {
-    background-color: #555;
-}
-
-#dark-mode-toggle.dark-mode {
-    background-color: #eee;
-    color: #333;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
-                -5px -5px 10px rgba(255, 255, 255, 0.7);
-}
-
-
-/* ====================== Nav bar styling ====================== */
-#navbar {
-    background: #0f0f0f;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-}
-
-#navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#navbar a:hover {
-    background-color: #555;
-}
-
-#navbar a.active {
-    background-color: #4CAF50;
-}
 

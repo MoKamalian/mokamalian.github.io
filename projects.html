@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="border-style: solid;border-color: red">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,9 @@
     <title>Amir Kamalian</title>
 </head>
 <body>
-    
+
         <div id="portfolio-container">
+            
             <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
             <h1>Amir Kamalian</h1>
@@ -17,31 +18,50 @@
                 <a href="./about_me.html">About Me</a>
                 <a href="./projects.html" class="active">Projects</a>
             </div>
+            
+            <div id="portfolio-grid"> 
+                <div class="project-card" id="emb-work-term">
+                    <h2 class="project-title">Embedded Systems Work Term</h2>
+                    <p class="project-description">
+                        Worked in a project setting to create web-based dashboard to display environmental data 
+                        collected from Arduino sensors. Contributions to the team included writing the code for 
+                        configuration of the Arduino sensors and writing the Python script that would send data 
+                        to the web dashboard. The project repo can be found here for more detailed information on 
+                        the project:
+                    </p>
+                    <a href="https://github.com/MoKamalian/envSensor" target="_blank" class="project-link">View Project</a>
+                </div>
 
-            <div class="project-card">
-                <h2 class="project-title">Embedded Systems Work Term</h2>
-                <p class="project-description">Project description. </p>
-                <a href="#" class="project-link">View Project</a>
+                <div class="project-card" id="chest-xray-project">
+                    <h2 class="project-title">Chest X-Ray Classifier</h2>
+                    <p class="project-description">
+                        This project is a Chest X-Ray image classifier written in C++; using OpenCV and TensorFlow.
+                        X-Ray image dataset used from Kaggle was used to train and test the model for classification. This 
+                        project is still a work in progress but more information can be found on my GitHub below!
+                    </p>
+                    <a href="https://github.com/MoKamalian/CXRClassifier" target="_blank" class="project-link">View Project</a>
+                </div>
+
+                <div class="project-card" id="mem-manger-project">
+                    <h2 class="project-title">vm-memory-manager</h2>
+                    <p class="project-description">
+                        A personal project to better understand how operating systems work. This project is written in C 
+                        and is meant to simulate the virtual to physical address translation process that occurs within 
+                        the operating system. This project is still a work in progress but check out what I have written 
+                        so far below:
+                    </p>
+                    <a href="https://github.com/MoKamalian/virtual-memory-manger" target="_blank" class="project-link">View Project</a>
+                </div>
+
+                <div class="project-card" id="terminal-weather-project">
+                    <h2 class="project-title">TerminalWeather</h2>
+                    <p class="project-description">
+                        A simple terminal application that provides general weather information for a particular city. 
+                        This project is built using C++ and the OpenWeatherMap API. More information can be found below: 
+                    </p>
+                    <a href="https://github.com/MoKamalian/TerminalWeather" target="_blank" class="project-link">View Project</a>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h2 class="project-title">Chest X-Ray Classifier</h2>
-                <p class="project-description">Project Description. </p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h2 class="project-title">vm-memory-manager</h2>
-                <p class="project-description">Project Description. </p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h2 class="project-title">TerminalWeather</h2>
-                <p class="project-description">Project Description. </p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-
             
         </div>
 
