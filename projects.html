@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="./scripts/scripts.js" defer></script>
     <title>Amir Kamalian</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             </div>
             
             <div id="portfolio-grid"> 
-                <div class="project-card" id="emb-work-term">
+                <div id="project-card">
                     <h2 class="project-title">Embedded Systems Work Term</h2>
                     <p class="project-description">
                         Worked in a project setting to create web-based dashboard to display environmental data 
@@ -32,7 +33,7 @@
                     <a href="https://github.com/MoKamalian/envSensor" target="_blank" class="project-link">View Project</a>
                 </div>
 
-                <div class="project-card" id="chest-xray-project">
+                <div id="project-card">
                     <h2 class="project-title">Chest X-Ray Classifier</h2>
                     <p class="project-description">
                         This project is a Chest X-Ray image classifier written in C++; using OpenCV and TensorFlow.
@@ -42,7 +43,7 @@
                     <a href="https://github.com/MoKamalian/CXRClassifier" target="_blank" class="project-link">View Project</a>
                 </div>
 
-                <div class="project-card" id="mem-manger-project">
+                <div id="project-card">
                     <h2 class="project-title">vm-memory-manager</h2>
                     <p class="project-description">
                         A personal project to better understand how operating systems work. This project is written in C 
@@ -53,7 +54,7 @@
                     <a href="https://github.com/MoKamalian/virtual-memory-manger" target="_blank" class="project-link">View Project</a>
                 </div>
 
-                <div class="project-card" id="terminal-weather-project">
+                <div id="project-card">
                     <h2 class="project-title">TerminalWeather</h2>
                     <p class="project-description">
                         A simple terminal application that provides general weather information for a particular city. 
@@ -64,16 +65,6 @@
             </div>
             
         </div>
-
-
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            document.getElementById('portfolio-container').classList.toggle('dark-mode');
-            document.querySelectorAll('.project-card').forEach(card => card.classList.toggle('dark-mode'));
-            document.getElementById('dark-mode-toggle').classList.toggle('dark-mode');
-        }
-    </script>
 
 </body>
 </html>
